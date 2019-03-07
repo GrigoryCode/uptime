@@ -32,5 +32,4 @@ group :test do
 end
 
 gem 'simple_form', '~> 4.1'
-gem 'bootstrap', '~> 4.3', '>= 4.3.1'
-gem 'jquery-rails'
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
