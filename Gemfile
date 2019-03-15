@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.1'
+ruby '2.6.1'
 
 gem 'rails', '~> 5.2.2'
 
-gem 'sqlite3', '~> 1.3.6'
 gem 'puma', '~> 3.11'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -16,6 +15,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3', '~> 1.3.6'
 end
 
 group :development do
@@ -31,5 +31,9 @@ group :test do
   gem 'chromedriver-helper'
 end
 
+group :development do
+  gem 'pg'
+end
+
 gem 'simple_form', '~> 4.1'
-gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'bootstrap', '~> 4.3.1'
