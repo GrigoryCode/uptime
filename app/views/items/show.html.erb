@@ -3,4 +3,6 @@
   <p><%= @item.description %></p>
 
   <%= link_to "Back", root_path %>
+  <%= link_to "Edit", edit_item_path %>
+  <%= link_to "Delete", item_path, method: :delete, data: { confirm: "Are You Shure?" } %>
 </div>
